@@ -1,0 +1,160 @@
+/* === Modern Clean Resume CSS === */
+:root {
+  --bg: #0f1724;
+  --text: #e6eef6;
+  --accent: #00c2a8;
+  --card: #111a29;
+  --muted: #9aa4b2;
+  --max-width: 900px;
+  --radius: 10px;
+  --font: "Inter", "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ===== HEADER ===== */
+.top {
+  background: linear-gradient(135deg, #00c2a8 0%, #0057a0 100%);
+  color: white;
+  padding: 2rem 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #fff;
+  color: #00384a;
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+h2 {
+  margin: 0.2rem 0;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #d9f3ff;
+}
+
+.contact {
+  font-size: 0.9rem;
+}
+
+.btn {
+  background: #fff;
+  color: #00384a;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #f4f4f4;
+  transform: translateY(-2px);
+}
+
+/* ===== SECTIONS ===== */
+section {
+  background: var(--card);
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+h3 {
+  color: var(--accent);
+  margin-top: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.3rem;
+}
+
+/* ===== JOBS ===== */
+.job {
+  margin-bottom: 1.2rem;
+}
+
+.job h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+ul {
+  margin: 0.5rem 0 0 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.4rem;
+}
+
+/* ===== SKILLS ===== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skills span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  .avatar {
+    margin-bottom: 0.5rem;
+  }
+}
