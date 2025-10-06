@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sachin Choudhary — Product Development Engineer</title>
+  <meta name="description" content="Sachin Choudhary — Product Development Engineer. Product development, simulation, design engineering, additive manufacturing, FEA, CFD, Python, AI."/>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#00c2a8; --glass: rgba(255,255,255,0.04);
+      --text:#e6eef6; --accent-2:#7dd3fc;
+      --max-width:1100px;
+      --radius:12px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace;
+    }
+    [data-theme="light"]{
+      --bg:#f5f7fb; --card:#ffffff; --muted:#586170; --accent:#0b74ff; --glass: rgba(10,10,10,0.03);
+      --text:#0b1220; --accent-2:#0369a1;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, rgba(7,10,15,1) 0%, rgba(11,17,28,1) 100%);
+      color:var(--text); background-color:var(--bg); -webkit-font-smoothing:antialiased;
+      line-height:1.45; padding:32px;
+      display:flex; justify-content:center;
+    }
+
+    .container{
+      width:100%; max-width:var(--max-width); margin:0 auto;
+    }
+
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+      border-radius:var(--radius); padding:28px; display:grid; gap:20px;
+      box-shadow: 0 6px 30px rgba(2,6,23,0.6); backdrop-filter: blur(6px);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    header{
+      display:flex; gap:18px; align-items:center; justify-content:space-between;
+    }
+    .head-left{display:flex; gap:18px; align-items:center}
+    .avatar{
+      width:84px; height:84px; border-radius:14px; background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      display:flex; align-items:center; justify-content:center; font-weight:700; color:#042; font-family:var(--mono);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+    }
+    h1{margin:0; font-size:20px; letter-spacing:0.2px}
+    .title {color:var(--muted); font-weight:600; font-size:13px; margin-top:4px}
+    .contact{display:flex; gap:12px; align-items:center; font-size:13px; color:var(--muted)}
+    .contact a{color:var(--accent); text-decoration:none}
+    .actions{display:flex; gap:10px; align-items:center}
+
+    button.btn{
+      background:var(--accent); color:#042; border:none; padding:10px 12px; border-radius:10px; cursor:pointer;
+      font-weight:700; font-size:13px;
+      box-shadow: 0 6px 18px rgba(0,194,168,0.12);
+    }
+    button.ghost{
+      background:transparent; border:1px solid rgba(255,255,255,0.06); color:var(--text); padding:8px 12px; border-radius:10px;
+      cursor:pointer; font-weight:600;
+    }
+
+    main{display:grid; grid-template-columns: 1fr 360px; gap:24px;}
+    @media (max-width:980px){ main{grid-template-columns:1fr} .side{order:2} }
+
+    section.card-block{ background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent); padding:18px; border-radius:12px; }
+    section h2{margin:0 0 12px 0; font-size:16px}
+    p.lead{color:var(--muted); margin:0 0 6px 0}
+
+    /* Experience timeline */
+    .timeline{display:flex; flex-direction:column; gap:14px}
+    .job{background:var(--glass); padding:14px; border-radius:10px; border:1px solid rgba(255,255,255,0.02)}
+    .job h3{margin:0; font-size:15px}
+    .meta{display:flex; gap:8px; color:var(--muted); font-size:13px; margin-top:6px}
+    .bullets{margin:10px 0 0 0; padding-left:18px; color:var(--text)}
+    .bullets li{margin:8px 0; font-size:14px; color:var(--text)}
+
+    /* Skills */
+    .skills{display:flex; flex-wrap:wrap; gap:8px}
+    .skill{background:rgba(255,255,255,0.03); padding:8px 10px; border-radius:999px; color:var(--text); font-size:13px; border:1px solid rgba(255,255,255,0.03)}
+
+    /* Education */
+    .edu-item{display:flex; justify-content:space-between; align-items:center; gap:12px; padding:10px 0; border-bottom:1px dashed rgba(255,255,255,0.02)}
+    .edu-item:last-child{border-bottom:none}
+
+    footer{display:flex; justify-content:space-between; gap:12px; align-items:center; color:var(--muted); font-size:13px}
+
+    /* Print friendly */
+    @media print{
+      body{background:white; color:black}
+      .card{box-shadow:none; border:none}
+      button, .theme-toggle {display:none}
+    }
+
+    /* small utilities */
+    .muted{color:var(--muted)}
+    .caps{font-size:12px; letter-spacing:0.6px; color:var(--muted); text-transform:uppercase}
+    .tag{display:inline-block; background:rgba(255,255,255,0.02); padding:6px 8px; border-radius:8px; font-size:12px; color:var(--muted)}
+    .divider{height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,0.03), transparent); margin:6px 0 12px}
+    .tools{display:flex; gap:8px; flex-wrap:wrap}
+    .meta-strong{color:var(--text); font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" role="main" aria-labelledby="pageTitle">
+      <header>
+        <div class="head-left">
+          <div class="avatar" aria-hidden="true">SC</div>
+          <div>
+            <h1 id="pageTitle">Sachin Choudhary</h1>
+            <div class="title">Product Development Engineer</div>
+            <div class="contact" style="margin-top:8px">
+              <div title="Email">📧 <a href="mailto:keshavauspicious@gmail.com">keshavauspicious@gmail.com</a></div>
+              <div title="Phone">📱 <a href="tel:+12605730761">+1 (260) 573-0761</a></div>
+              <div class="muted">Darbhanga, Bihar, India (Origin)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions" role="toolbar">
+          <button class="btn" id="printBtn" title="Print or Save as PDF">Print / Save PDF</button>
+          <button class="ghost theme-toggle" id="themeToggle" title="Toggle theme">Toggle theme</button>
+        </div>
+      </header>
+
+      <main>
+        <!-- Left column: content -->
+        <div>
+          <!-- Summary -->
+          <section class="card-block" aria-labelledby="summaryTitle">
+            <h2 id="summaryTitle">Summary</h2>
+            <p class="lead">Results-oriented research professional with a proven track record in leading and executing large-scale projects, managing cross-functional teams, and driving innovation. Experienced in product development, simulation, and design engineering with demonstrated success in optimising manufacturing processes to increase yield and reduce cost. Holds an M.S. from Missouri University of Science and Technology and a B.Tech from NIT Kurukshetra.</p>
+          </section>
+
+          <!-- Experience -->
+          <section style="margin-top:16px" class="card-block" aria-labelledby="expTitle">
+            <h2 id="expTitle">Work Experience</h2>
+            <div class="timeline">
+
+              <div class="job" aria-labelledby="job1">
+                <h3 id="job1">Product Development Manager — Alpha Beat Technologies Private Limited</h3>
+                <div class="meta"><div class="meta-strong">Apr 2024 – Present</div><div class="muted">Hyderabad, India</div></div>
+                <ul class="bullets">
+                  <li>Leading end-to-end development of autonomous ground rovers for industrial and exploration applications.</li>
+                  <li>Defined product strategy & roadmap for next-gen rover platforms; managed mechanical, electrical, software, and AI teams.</li>
+                  <li>Managed prototype development, field testing, and iterative design; delivered ruggedized, modular autonomous systems.</li>
+                </ul>
+              </div>
+
+              <div class="job" aria-labelledby="job2">
+                <h3 id="job2">Product Development Engineer — SCP Limited</h3>
+                <div class="meta"><div class="meta-strong">Aug 2022 – Jan 2024</div><div class="muted">Auburn, IN, USA</div></div>
+                <ul class="bullets">
+                  <li><strong>Project:</strong> High-Performance Hot Surface Igniters — Used HyperMesh, MATLAB, ANSYS Workbench & transient thermal analysis. Implemented DOE in ANSYS to increase product life and reliability. Developed three patentable igniter designs.</li>
+                  <li>Increased manufacturing yield from 45% to 90% via process optimisation and design changes.</li>
+                  <li><strong>Project:</strong> Gas Valves & Ceramic Heaters — Performed thermal/structural simulations and CFD using OPENFOAM; optimized designs to meet CSA standards and cost targets.</li>
+                </ul>
+              </div>
+
+              <div class="job" aria-labelledby="job3">
+                <h3 id="job3">Design Engineer — Interpower Induction</h3>
+                <div class="meta"><div class="meta-strong">Feb 2022 – Jul 2022</div><div class="muted">Almont, MI, USA</div></div>
+                <ul class="bullets">
+                  <li>Designed & analyzed SiC ceramic liners for induction forging; used HyperMesh & Nastran for thermal/structural validation.</li>
+                  <li>Designed water-based cooling systems (30–150 kW) using Autodesk Inventor; optimized flow & energy efficiency.</li>
+                </ul>
+              </div>
+
+              <div class="job" aria-labelledby="job4">
+                <h3 id="job4">Graduate Researcher — University of Missouri, Rolla</h3>
+                <div class="meta"><div class="meta-strong">Aug 2018 – Dec 2021</div><div class="muted">Rolla, MO, USA</div></div>
+                <ul class="bullets">
+                  <li>Designed & fabricated a material extrusion-based additive manufacturing (3D printer) using SolidWorks and custom hardware/software.</li>
+                  <li>Formulated and optimized ceramic paste rheology and printing parameters; built ML models (Python) to map input parameters to print quality and density.</li>
+                  <li>Programmed G-code modifiers & implemented optimized extrusion processes to produce fully dense ceramic parts.</li>
+                </ul>
+              </div>
+
+              <div class="job" aria-labelledby="job5">
+                <h3 id="job5">Engineering Analyst Grade II — Oceaneering International</h3>
+                <div class="meta"><div class="meta-strong">Aug 2016 – Jul 2018</div><div class="muted">Chandigarh, India</div></div>
+                <ul class="bullets">
+                  <li>Ride vehicle chassis frame analysis for strength, fatigue & bolt analysis using HyperMesh & ANSYS. Built Excel VBA tools to analyze 100,000 bolts.</li>
+                  <li>Performed multi-body dynamics simulations for robotic dinosaur body frames; collaborated with robotics teams for Universal Studios projects.</li>
+                </ul>
+              </div>
+
+              <div class="job" aria-labelledby="job6">
+                <h3 id="job6">Assistant Manager, R & D — Maruti Suzuki</h3>
+                <div class="meta"><div class="meta-strong">Jul 2014 – Jul 2016</div><div class="muted">Gurgaon, India</div></div>
+                <ul class="bullets">
+                  <li>FE modeling & simulation of chassis components (HyperMesh, Nastran, Abaqus); created CAE model database and proposed cost/weight optimizations.</li>
+                  <li>Led FEA studies that achieved ~10% cost reduction and 6% weight reduction on selected components.</li>
+                </ul>
+              </div>
+
+            </div>
+          </section>
+
+          <!-- Projects -->
+          <section style="margin-top:16px" class="card-block" aria-labelledby="projTitle">
+            <h2 id="projTitle">Selected Projects & Research Highlights</h2>
+            <ul class="bullets">
+              <li><strong>Additive Manufacturing Machine:</strong> Full-stack design & fabrication of a material-extrusion ceramic 3D printer; hardware + firmware + control algorithms.</li>
+              <li><strong>Ceramic Paste Optimization:</strong> Created machine-learning model to correlate rheology and printing parameters to print density and quality; enabled high-density ceramic parts.</li>
+              <li><strong>Igniter Design:</strong> Developed multiple patentable designs and significantly improved manufacturing yield (45% → 90%).</li>
+            </ul>
+          </section>
+
+        </div>
+
+        <!-- Right column: sidebar -->
+        <aside class="side" style="width:100%">
+          <section class="card-block" aria-labelledby="skillsTitle">
+            <h2 id="skillsTitle">Skills & Tools</h2>
+            <div class="skills" style="margin-top:10px">
+              <!-- CAD -->
+              <span class="skill">SolidWorks</span>
+              <span class="skill">CATIA</span>
+              <span class="skill">UG NX</span>
+              <span class="skill">Creo</span>
+              <span class="skill">Inventor</span>
+              <span class="skill">Teamcenter</span>
+            </div>
+
+            <div style="height:8px"></div>
+
+            <div class="skills">
+              <!-- CAE -->
+              <span class="skill">FEA (NASTRAN, Abaqus)</span>
+              <span class="skill">ANSYS Workbench / APDL</span>
+              <span class="skill">HyperMesh</span>
+              <span class="skill">HyperStudy</span>
+            </div>
+
+            <div style="height:8px"></div>
+
+            <div class="skills">
+              <span class="skill">Python (AI libraries)</span>
+              <span class="skill">MATLAB</span>
+              <span class="skill">Minitab</span>
+              <span class="skill">TensorFlow</span>
+              <span class="skill">Scikit-learn</span>
+            </div>
+
+            <div style="height:8px"></div>
+
+            <div class="skills">
+              <span class="skill">OPENFOAM</span>
+              <span class="skill">COMSOL</span>
+              <span class="skill">Additive Manufacturing</span>
+              <span class="skill">Materials / Ceramics</span>
+            </div>
+
+          </section>
+
+          <section style="margin-top:16px" class="card-block" aria-labelledby="eduTitle">
+            <h2 id="eduTitle">Education</h2>
+            <div class="edu-item">
+              <div>
+                <div class="meta-strong">M.S., Mechanical Engineering</div>
+                <div class="muted">Missouri University of Science and Technology — Aug 2018 – Dec 2021</div>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div>
+                <div class="meta-strong">B.Tech, Mechanical Engineering</div>
+                <div class="muted">National Institute of Technology, Kurukshetra — Jul 2010 – May 2014</div>
+              </div>
+            </div>
+          </section>
+
+          <section style="margin-top:16px" class="card-block" aria-labelledby="contactTitle">
+            <h2 id="contactTitle">Contact</h2>
+            <p class="muted" style="margin:0 0 10px 0">Email: <a href="mailto:keshavauspicious@gmail.com">keshavauspicious@gmail.com</a><br>Phone: <a href="tel:+12605730761">+1 (260) 573-0761</a></p>
+            <div class="divider"></div>
+            <div class="caps">Availability</div>
+            <p class="lead" style="margin-top:8px">Open to Product Development / R&D / Engineering roles. Remote & onsite opportunities considered.</p>
+          </section>
+        </aside>
+
+      </main>
+
+      <footer style="margin-top:12px">
+        <div class="muted">Generated resume • Clean, printable & responsive</div>
+        <div class="muted">Last updated: <span id="updatedDate"></span></div>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    // Print button (Save as PDF)
+    document.getElementById('printBtn').addEventListener('click', function(){ window.print(); });
+
+    // theme toggle (persist in localStorage)
+    const toggle = document.getElementById('themeToggle');
+    const root = document.documentElement;
+    function applyTheme(t){
+      root.setAttribute('data-theme', t);
+      localStorage.setItem('theme', t);
+    }
+    const saved = localStorage.getItem('theme') || 'dark';
+    applyTheme(saved);
+    toggle.addEventListener('click', ()=>{
+      const cur = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      applyTheme(cur);
+    });
+
+    // updated date
+    const d = new Date();
+    const opt = { year:'numeric', month:'short', day:'numeric' };
+    document.getElementById('updatedDate').textContent = d.toLocaleDateString(undefined, opt);
+
+    // small accessibility: focus outline
+    (function(){ const style = document.createElement('style'); style.innerHTML = '*:focus{outline:3px solid rgba(0,194,168,0.12); outline-offset:2px}'; document.head.appendChild(style); })();
+  </script>
+</body>
+</html>
