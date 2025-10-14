@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+    body { font-family: 'IBM Plex Mono', monospace; }
+  </style>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sachin Choudhary — Product Development Manager</title>
@@ -17,8 +23,9 @@
           <h1>Sachin Choudhary</h1>
           <h2>Product Development Manager</h2>
           <p class="contact">
-            📧 <a href="mailto:keshavauspicious@gmail.com">keshavauspicious@gmail.com</a> |
-            📱 <a href="tel:+17042709578">+917042709578</a>
+            <i class="fas fa-envelope"></i> <a href="mailto:keshavauspicious@gmail.com">keshavauspicious@gmail.com</a> |
+            <i class="fas fa-phone"></i> <a href="tel:+917042709578">+917042709578</a> |
+            <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/sachin-c-b6a977103/" target="_blank">linkedin</a>
           </p>
         </div>
       </div>
@@ -152,17 +159,47 @@
 
     <section>
       <h3>Key Skills</h3>
-        <div class="skills">
-          <span>CAD: SolidWorks, CATIA, UG NX, Creo, Teamcenter</span>
-          <span>CAE: FEA, NASTRAN, Abaqus, HyperMesh, ANSYS Workbench, ANSYS APDL</span>
-          <span>Programming: Python, MATLAB, Minitab</span>
-          <span>Artificial Intelligence: Tensorflow, Scikit-learn, Python AI libraries</span>
-          <span>CFD: OPENFOAM, COMSOL</span>
-          <span>Material Science: Ceramics, Additive Manufacturing</span>
-          <span>Thermal & Structural Analysis</span>
-          <span>Product Development: DFMEA, Design Optimization, Additive Manufacturing</span>
-          <span>Other Software: Inventor, Siemens NX</span>
-        </div>
+        <ul class="skills" style="display: flex; flex-direction: column; gap: 1rem;">
+          <li><i class="fas fa-drafting-compass"></i> <strong>CAD:</strong> SolidWorks, CATIA, UG NX, Creo, Teamcenter, Geometric Dimensioning & Tolerancing (GD&T)</li>
+          <li><i class="fas fa-cogs"></i> <strong>CAE:</strong> FEA, NASTRAN, Abaqus, HyperMesh, ANSYS Workbench, ANSYS APDL, Tolerance stack-up analysis</li>
+          <li><i class="fas fa-code"></i> <strong>Programming:</strong> Python, MATLAB, Minitab, C++</li>
+          <li><i class="fas fa-brain"></i> <strong>Artificial Intelligence:</strong> Tensorflow, Scikit-learn, Python AI libraries</li>
+          <li><i class="fas fa-water"></i> <strong>CFD:</strong> OPENFOAM, COMSOL</li>
+          <li><i class="fas fa-flask"></i> <strong>Material Science:</strong> Ceramics, Additive Manufacturing</li>
+          <li><i class="fas fa-thermometer-half"></i> <strong>Thermal & Structural Analysis</strong></li>
+          <li><i class="fas fa-project-diagram"></i> <strong>Product Development:</strong> DFMEA, Design Optimization, Additive Manufacturing, Design for Manufacturing (DFM), Design for Assembly (DFA)</li>
+          <li><i class="fas fa-tools"></i> <strong>Other Software:</strong> Inventor, Siemens NX, AWS2.0 weld design, Raspberry Pi, Atmega2560, Microchip Studio, Gazebo, ROS2</li>
+        </ul>
+    </section>
+
+    <section>
+      <h3>Contact Information</h3>
+      <div class="contact-icons">
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:keshavauspicious@gmail.com" class="icon-link" title="Email">
+              <i class="fas fa-envelope"></i> keshavauspicious@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="tel:+917042709578" class="icon-link" title="Phone">
+              <i class="fas fa-phone"></i> +917042709578
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/sachin-c-b6a977103/" class="icon-link" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin"></i> linkedin.com/in/sachin-c-b6a977103
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/sc35w" class="icon-link" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i> github.com/sc35w
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-details">
+      <!-- Removed university icons and old contact details -->
     </section>
   </main>
 
